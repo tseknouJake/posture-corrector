@@ -220,7 +220,6 @@ def main():
                 and (now - last_notify_time) > NOTIFY_COOLDOWN
             ):
                 send_posture_notification()
-                cv2.imshow("Posture Alert", alert_img)
                 last_notify_time = now
 
             last_display_label = display_label
